@@ -62,8 +62,8 @@ function App() {
       const response = await axios.get(`https://gdrive.demo.imtaqin.id/?url=${docId}`);
       showToastSuccess("Fetching data from API server...");
       const data = response.data;
-      setVideoSrc(`https://gdrive.demo.imtaqin.id/proxy-video/${data.uniqueId}`);
-      setThumbnailSrc(`https://gdrive.demo.imtaqin.id/proxy-thumbnail/${data.uniqueId}`);
+      setVideoSrc(`https://wilsonstream.deno.dev/proxy-video/${data.uniqueId}`);
+      setThumbnailSrc(`https://wilsonstream.deno.dev/proxy-thumbnail/${data.uniqueId}`);
     } catch (error) {
       showToastError("Error fetching data from API server: ", error);
     }
