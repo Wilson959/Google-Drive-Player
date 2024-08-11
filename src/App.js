@@ -59,11 +59,11 @@ function App() {
   
     try {
     
-      const response = await axios.get(`https://wilsonstream.deno.dev/?url=${docId}`);
+      const response = await axios.get(`https://google-drive-player.netlify.app/?url=${docId}`);
       showToastSuccess("Fetching data from API server...");
       const data = response.data;
-      setVideoSrc(`https://wilsonstream.deno.dev/proxy-video/${data.uniqueId}`);
-      setThumbnailSrc(`https://wilsonstream.deno.dev/proxy-thumbnail/${data.uniqueId}`);
+      setVideoSrc(`https://google-drive-player.netlify.app/proxy-video/${data.uniqueId}`);
+      setThumbnailSrc(`https://google-drive-player.netlify.app/proxy-thumbnail/${data.uniqueId}`);
     } catch (error) {
       showToastError("Error fetching data from API server: ", error);
     }
