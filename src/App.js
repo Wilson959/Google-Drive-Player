@@ -59,7 +59,7 @@ function App() {
   
     try {
     
-      const response = await axios.get(`https://gdrive.demo.imtaqin.id/?url=${docId}`);
+      const response = await axios.get(`https://wilsonstream.deno.dev/?url=${docId}`);
       showToastSuccess("Fetching data from API server...");
       const data = response.data;
       setVideoSrc(`https://wilsonstream.deno.dev/proxy-video/${data.uniqueId}`);
